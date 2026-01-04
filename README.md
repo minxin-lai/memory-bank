@@ -23,10 +23,9 @@
 2. 填写项目事实层的 6 个文件
 3. 将对应 Agent 入口文件（如 `CLAUDE.md`）放到项目根目录
 
-## 核心约束
-
-- **Plan-first**: 先计划后编码，每次只执行一步
-- **Glue principle**: 入口只做连接，核心逻辑模块化、可独立测试
-- **Evidence-driven**: 每个改动须有验证产物
-- **Minimal surface**: 改动最小化，避免无关重构
-- **Reversible**: 优化必须可回滚（feature flag）
+## Core Constraints
+- Plan-first: Plan before coding; execute only one step at a time.
+- Glue principle: Entry points should only handle wiring; core logic must be modular and independently testable.
+- Evidence-driven: Every change requires a verification artifact (proof of testing).
+- Minimal surface: Keep changes minimal; strictly avoid unrelated refactoring.
+- Reversible: Optimizations must be reversible (e.g., via feature flags).

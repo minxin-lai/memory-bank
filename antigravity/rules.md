@@ -23,3 +23,10 @@ trigger: always_on
 - Execute ONLY one step from memory-bank/03-plan.md at a time.
 - Stop after completing the step and producing its validation artifact(s).
 - After a passing step: update memory-bank/05-progress.md (and 04-architecture.md if module boundaries changed).
+
+## Core Constraints
+- Plan-first: Plan before coding; execute only one step at a time.
+- Glue principle: Entry points should only handle wiring; core logic must be modular and independently testable.
+- Evidence-driven: Every change requires a verification artifact (proof of testing).
+- Minimal surface: Keep changes minimal; strictly avoid unrelated refactoring.
+- Reversible: Optimizations must be reversible (e.g., via feature flags).

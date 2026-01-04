@@ -20,3 +20,10 @@ Read these files first:
 Follow the rules described in:
 - memory-bank/codex_rules/development.md
 You MUST open and follow it before making code changes.
+
+## Core Constraints
+- Plan-first: Plan before coding; execute only one step at a time.
+- Glue principle: Entry points should only handle wiring; core logic must be modular and independently testable.
+- Evidence-driven: Every change requires a verification artifact (proof of testing).
+- Minimal surface: Keep changes minimal; strictly avoid unrelated refactoring.
+- Reversible: Optimizations must be reversible (e.g., via feature flags).
