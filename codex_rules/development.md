@@ -4,8 +4,8 @@
 - Plan-first: before editing code, produce/refresh a step-by-step plan and name the single step you will execute next.
 - One-step rule: execute ONLY one step per iteration. Do not start the next step until validation for the current step passes.
 - Evidence-driven: every change must come with a measurable validation artifact (test output, benchmark JSON/CSV, log excerpt, or metric table).
-- Minimal surface: prefer small, reversible changes. Avoid refactors unless required by the current step.
-- Reversible optimizations: all performance optimizations MUST be behind a feature flag / config switch with a safe default (off unless baseline requires it).
+- Minimal surface: prefer small changes. Avoid refactors unless required by the current step.
+
 
 ## 1) Glue principle (anti-spaghetti)
 - Glue layer does wiring only (CLI, config loading, dependency injection, pipeline orchestration).
@@ -25,7 +25,7 @@ When asked to "make a plan" or before coding:
    - Commands to run (build/test/bench)
    - Validation gate (pass/fail rule; metric thresholds)
    - Artifacts to save (where logs/results go)
-   - Rollback (how to disable / revert quickly)
+
 
 ## 3) Coding rules (quality + reproducibility)
 - Keep modules small and named by responsibility (e.g., pruner/, codec_features/, bench/, metrics/, configs/).

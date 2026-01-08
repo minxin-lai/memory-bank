@@ -13,7 +13,7 @@ For each step:
 - Commands (build/test/bench):
 - Validation gate (pass/fail):
 - Artifacts to save (paths, filenames):
-- Rollback (flag/config or revert instructions):
+
 
 ## Planning ordering
 1) Make baseline reproducible + scripted.

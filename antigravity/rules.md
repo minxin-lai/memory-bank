@@ -29,4 +29,3 @@ trigger: always_on
 - Glue principle: Entry points should only handle wiring; core logic must be modular and independently testable.
 - Evidence-driven: Every change requires a verification artifact (proof of testing).
 - Minimal surface: Keep changes minimal; strictly avoid unrelated refactoring.
-- Reversible: Optimizations must be reversible (e.g., via feature flags).
